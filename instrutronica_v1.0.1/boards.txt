@@ -1,0 +1,64 @@
+# Instrutronica Board Contribution Configuration
+#
+# For more information see:
+# * https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5---3rd-party-Hardware-specification
+# * https://github.com/arduino/Arduino/wiki/Arduino-Hardware-Cores-migration-guide-from-1.0-to-1.6
+#
+
+menu.cpu=Processor
+
+################################################################################
+################################### Eagle Plus #################################
+################################################################################
+eagleplus.name=Eagle Plus
+
+eagleplus.upload.tool=arduino:avrdude
+eagleplus.upload.protocol=wiring
+eagleplus.upload.maximum_data_size=8192
+
+eagleplus.bootloader.tool=avrdude
+eagleplus.bootloader.unlock_bits=0x3F
+eagleplus.bootloader.lock_bits=0x0F
+
+eagleplus.build.board=AVR_MEGA2560
+eagleplus.build.core=arduino:arduino
+eagleplus.build.variant=arduino:mega
+eagleplus.build.mcu=atmega2560
+
+eagleplus.upload.maximum_size=258048
+eagleplus.upload.speed=57600
+
+eagleplus.bootloader.low_fuses=0xFD
+eagleplus.bootloader.high_fuses=0xD4
+eagleplus.bootloader.extended_fuses=0xFD
+eagleplus.bootloader.file=mega/MegaPro3.3V-8MHz-57600.hex
+
+eagleplus.build.f_cpu=8000000L
+
+################################################################################
+################################## Pigeon 2560 #################################
+################################################################################
+pigeon.name=Pigeon 2560
+
+pigeon.upload.tool=arduino:avrdude
+pigeon.upload.protocol=wiring
+pigeon.upload.maximum_data_size=8192
+
+pigeon.bootloader.tool=avrdude
+pigeon.bootloader.unlock_bits=0x3F
+pigeon.bootloader.lock_bits=0x0F
+
+pigeon.build.board=AVR_MEGA2560
+pigeon.build.core=arduino:arduino
+pigeon.build.variant=arduino:mega
+pigeon.build.mcu=atmega2560
+
+pigeon.upload.maximum_size=253952
+pigeon.upload.speed=115200
+
+pigeon.bootloader.low_fuses=0xFF
+pigeon.bootloader.high_fuses=0xD8
+pigeon.bootloader.extended_fuses=0xFD
+pigeon.bootloader.file=arduino:stk500v2/stk500boot_v2_mega2560.hex
+
+pigeon.build.f_cpu=16000000L

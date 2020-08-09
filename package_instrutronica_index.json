@@ -1,0 +1,35 @@
+{
+  "packages":
+  [
+    {
+      "name": "instrutronica",
+      "maintainer": "instrutronica",
+      "websiteURL": "https://instrutronica.com",
+      "email": "instrutronica@gmail.com",
+      "platforms":
+      [
+        {
+          "name": "instrutronica AVR Boards",
+          "architecture": "avr",
+          "version": "1.0.0",
+          "category": "Contributed",
+          "url": "https://github.com/Instrutronica/hardware_definition/raw/master/EaglePlus.1.0.0.zip",
+          "archiveFileName": "EaglePlus.1.0.0.zip",
+          "checksum": "SHA-256:745E9719D54C8EE1707801CF9A6EA3FE665F66878A781280FF013E8E4062811B",
+          "size": "819919",
+          "boards": [
+            {
+              "name": "Eagle Plus"
+            }
+
+          ],
+          "toolsDependencies": []
+        }
+
+      ],
+      "tools":
+      [
+      ]
+    }
+  ]
+}
